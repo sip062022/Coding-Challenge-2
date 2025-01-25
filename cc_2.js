@@ -16,3 +16,25 @@ let numberOfElements = scores.length ; // This calculates the number of elements
 let averageScore = total/numberOfElements; // This performs the calculate to find average by dividing the total of all scores by the number of elemeents, or 415/5=83.
 console.log("Average Score:", averageScore); // Displays the average score as "Average Score: 83"
 
+// Task 3: Working with Objects //
+
+let objectEmployee = {       // declares the object objectEmployee
+    name: "Mary",            // defines key "name" 
+    age: 25,                  // defines key "age"
+    department: "Finance",    // defines key "department"
+    isActive: true           // defines key "isActive"
+};
+console.log("Original Object:", objectEmployee); // Displays the original object as { name: "Mary", age: 25, department: "Finance", isActive: true }
+
+function updateDepartment (name, newDepartment) {  // defines function to update the department (as shown in Canvas)
+    name.department = newDepartment;      // continued function to updated department 
+    return name; // continued function to update department
+};
+
+let employeeRecord =  { name: "Mary", age: 25, department: "Finance", isActive: true };  // defines which employee record to update
+let updatedRecord = updateDepartment(employeeRecord, "Accounting");  // defines that we will be changing "finance" to "accounting"
+console.log("Object after changing department:", updatedRecord);  // Displays the updated object as { name: "Mary", age: 25, department: "Accounting", isActive: true }
+
+objectEmployee.Position = "Analyst"; // Adds the position of "analyst" to the object of objectEmployee
+console.log("Object after adding position:", objectEmployee); // Displays the updated object as { name: "Mary", age: 25, department: "Finance", isActive: true, Position: "Analyst" }
+
