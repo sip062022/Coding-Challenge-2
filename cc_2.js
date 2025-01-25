@@ -49,3 +49,17 @@ let customers = [   // defines the array as "customers"
 let newCustomer = {name: "Dave", email: "Dave@gmail.com", purchaseAmount: 20} // defines the new object to be added
 customers.push(newCustomer); // adds a new object to the end of the array
 console.log(customers); // Displays the new array with all four customers
+
+// Task 5: Object Methods //
+
+let order = {   // defines the object will be named "order"
+    orderID: 123,  // defines that order ID is 123
+    customerName: "Lily",   // defines that customer name is Lily
+    amount: 200, // defines that the amount is 200
+    add: function () { // creates method to calculate tax
+        return this.amount * 0.1; // gives formula to calculate tax (amount * 10% tax rate)
+    }
+};
+
+console.log("Customer information:", order); // Displays the customer information as "{ orderID: 123, customerName: "Lily", amount: 200 }"
+console.log("Tax Amount: $", order.add()); // Displays tax amount as "Tax Amount: $20"
