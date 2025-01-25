@@ -38,3 +38,14 @@ console.log("Object after changing department:", updatedRecord);  // Displays th
 objectEmployee.Position = "Analyst"; // Adds the position of "analyst" to the object of objectEmployee
 console.log("Object after adding position:", objectEmployee); // Displays the updated object as { name: "Mary", age: 25, department: "Finance", isActive: true, Position: "Analyst" }
 
+// Task 4: Array of Objects //
+
+let customers = [   // defines the array as "customers"
+    {name: "Andy", email: "Andy@gmail.com", purchaseAmount: 50},  // defines first object which contains Andy's name, email, and purchase amount
+    {name: "Blake", email: "Blake@gmail.com", purchaseAmount: 40}, // defines second object which contains Blake's name, email, and purchase amount
+    {name: "Claire", email: "Claire@gmail.com", purchaseAmount: 30} // defines third object which contains Claire's name, email, and purchase amount
+];
+
+let newCustomer = {name: "Dave", email: "Dave@gmail.com", purchaseAmount: 20} // defines the new object to be added
+customers.push(newCustomer); // adds a new object to the end of the array
+console.log(customers); // Displays the new array with all four customers
